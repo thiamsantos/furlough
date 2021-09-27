@@ -125,7 +125,7 @@ columns:
 * **terminate/2 callback?** - is the (optional) 
   [`terminate/2`](https://hexdocs.pm/elixir/1.12.0/GenServer.html#c:terminate/2) callback called, if present.
 * **Error log** - does OTP (proclib) log an error due to the exit?
-* **GenServer.call/2 exit/** - This is only releveant when a process exits during a `GenServer.call/2`, when
+* **GenServer.call/2 exit/** - This is only relevant when a process exits during a `GenServer.call/2`, when
   OTP is monitoring the process - [`:erlang.exit/1` is called on
   receipt of a `DOWN` message](https://github.com/erlang/otp/blob/OTP-22.0/lib/stdlib/src/gen.erl#L176-L177)
   before the reply message is received.
